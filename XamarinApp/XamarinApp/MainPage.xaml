@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamarinApp.MainPage">
+    <StackLayout>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Start">
+            <Image Margin="0,50,0,0" x:Name="imgBanner" Source="banner.png" ></Image>
+            <Image Margin="0,0,0,10" x:Name="imgEmail" HeightRequest="100" Source="cognitiveservice.png" ></Image>
+            <Label Margin="0,0,0,10" Text="Emotion Recognition" FontAttributes="Bold" FontSize="Large" TextColor="Gray" HorizontalTextAlignment="Center" ></Label>
+            <Image Margin="0,0,0,10" x:Name="imgSelected" HeightRequest="150" Source="defaultimage.png" ></Image>
+            <Button x:Name="btnPick" Text="Pick" Clicked="btnPick_Clicked" />
+            <StackLayout HorizontalOptions="CenterAndExpand" Margin="10,0,0,10">
+                <Label x:Name="lblTotalFace" ></Label>
+                <Label x:Name="lblGender"></Label>
+                <Label x:Name="lblAge"></Label>
+            </StackLayout>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
